@@ -7,5 +7,5 @@
 
 <h3> How to start project: </h3>
 <div>In root directory run: wasm-pack build</div>
-<div>Go to www directory and npm server: npm start</div>
+<div>Go to www directory and run npm server: npm start</div>
 <div>Website is available on: localhost:8080  </div>
