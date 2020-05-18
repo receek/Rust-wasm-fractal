@@ -1,0 +1,55 @@
+body {
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background:black;
+  }
+
+div.fractal {
+    float: left;
+    padding: 5px;
+    margin: 2px;
+}
+
+div.datainput {
+    width: 150;
+    float: right;
+    background-color: peru;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+}
+
+div.row {
+    background-color: slategrey;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+label.xy {
+    background-color: springgreen;
+    width: 10%;
+    text-align: right;
+}
+
+label.magnification{
+    background-color: powderblue;
+    width: 60%;
+    text-align: right;
+}
+
+input.cords {
+    width: 30%;
+}

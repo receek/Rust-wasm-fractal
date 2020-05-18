@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-fractal!</title>
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+  </head>
+
+  <body>
+    <pre id="game-of-life-canvas"></pre>
+    <script src="./bootstrap.js"></script>
+    <img id="img"></img>
+    <div>
+      <div class = "fractal">
+        <canvas id="rustCanvas" width="700" height="700" style="border:1px solid #d3d3d3;"></canvas>
+        <!-- <canvas id="jsCanvas" width="1024" height="1024" style="border:1px solid #d3d3d3;"></canvas> -->
+      </div>
+      <div class = "datainput">
+        <div class = "row">
+          <label class="xy" for="X">X:</label>
+          <input class="cords" type="number" id="X" value="2">
+          <label class="xy" for="Y">Y:</label>
+          <input class="cords" type="number" id="Y" value="2"> 
+        </div>
+        <div class = "row">
+          <label class="magnification" for="magnification">Magnification:</label>
+          <input class="cords" type="number" id="magnification" value="200">
+        </div>
+        <div class = "row">
+          <label class="genreator">Genreator:</label>
+          <div>
+            <label>Rust</label>
+            <input type="radio" id="generator" name="genereator" value="rust" checked> 
+          </div>
+          <div>
+            <label>JS</label>
+            <input type="radio" id="generator" name="genereator" value="js"> 
+          </div>
+        </div>
+        <div class="row">
+          <input type="button" id="reload_button" value="Reload"> 
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
